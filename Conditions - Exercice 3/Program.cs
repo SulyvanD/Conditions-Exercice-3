@@ -18,7 +18,7 @@ namespace Conditions___Exercice_3
             Console.WriteLine("Etes vous un homme ou une femme ?");
             sexe = Console.ReadLine();
 
-            if (age > 18)
+            if (age => 18)
             {
                 if (sexe == "Homme")
                 {
@@ -26,7 +26,14 @@ namespace Conditions___Exercice_3
                 }
                 else
                 {
-                    Console.WriteLine("Vous êtes une femme et vous êtes majeure.");
+                    if (sexe == "Femme")
+                    {
+                        Console.WriteLine("Vous êtes une femme et vous êtes majeure."); 
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sexe invalide.");
+                    }
                 }
             }
             else
@@ -37,7 +44,14 @@ namespace Conditions___Exercice_3
                 }
                 else
                 {
-                    Console.WriteLine("Vous êtes une femme et vous êtes majeure.")
+                    if (sexe == "Femme")
+                    {
+                        Console.WriteLine("Vous êtes une femme et vous êtes mineure.")
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sexe invalide.");
+                    }
                 }
             }
         }
